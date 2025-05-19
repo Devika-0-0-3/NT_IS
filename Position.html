@@ -45,9 +45,62 @@
             right:100px;
         }
         .Main2{
+            position:relative;
             width:100vw;
             height:100vh;
             background-color:black; 
+        }
+        .Sub21{
+            position:absolute;
+            left:5vw;
+            top:30vh;
+            width:40vw;
+            height:40vh;
+            font-size:xx-large;
+            color:aliceblue;
+            text-align:left;
+        }
+        .Sub22{
+            position:absolute;
+            right:0vw;
+            top:0vh;
+            width:50vw;
+            height:100vh;
+            background-color:violet;
+            opacity:0;
+
+        }
+        .Sub22 img{
+            width:100%;
+            height:100%;
+        }
+        #div1{
+            transition:all 2s ease-in-out;
+        }
+        .Main2:hover #div1{
+            opacity:1;
+            transition-delay:0s;
+        }
+        #div2{
+            transition:all 2s ease-in-out;
+        }
+        .Main2:hover #div2{
+            opacity:1;
+            transition-delay:3s;
+        }
+        #div3{
+            transition:all 2s ease-in-out;
+        }
+        .Main2:hover #div3{
+            opacity:1;
+            transition-delay:6s;
+        }
+        #div4{
+            transition:all 2s ease-in-out;
+        }
+        .Main2:hover #div4{
+            opacity:1;
+            transition-delay:9s;
         }
     </style>
 </head>
@@ -74,7 +127,22 @@
     </div>
 
     <div class="Main2">
-
+        <div class="Sub21">
+            <h1>Dodge Challenger</h1>
+            <p>The Dodge Challenger is the name of three generations of automobiles produced by the American automobile manufacturer Dodge. However, the first use of the Challenger name by Dodge dates back to 1959 for marketing a "value version" of the full-sized Coronet Silver Challenger.</p>
+        </div>
+        <div class="Sub22" id="div1">
+            <img src="https://i.pinimg.com/736x/de/28/85/de288539228cffb9b63c05fe2929eece.jpg">
+        </div>
+        <div class="Sub22" id="div2">
+            <img src="https://www.speednik.com/files/2023/02/that-was-then-this-is-now-the-dodge-challenger-2023-02-16_20-51-15_247115.jpg">
+        </div>
+        <div class="Sub22" id="div3">
+            <img src="https://images.autotrader.com/hn/c/757ede75b9f64edeaed2019d9c5044bc.jpg">
+        </div>
+        <div class="Sub22" id="div4">
+            <img src="https://masterpiecer-images.s3.yandex.net/d0f00086885611eeab052656ee3db587:upscaled">
+        </div>
     </div>
     
 </body>

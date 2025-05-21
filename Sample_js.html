@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <script src="Sample_js.js"></script>
+    <style>
+        #Heading {
+            display: flex;
+            flex-direction: row;
+            justify-content: center; /* Center items horizontally */
+            gap: 10px;               /* Space between items */
+            color: white;
+            background-color: brown;
+            padding: 10px;
+            border-radius: 5px;
+            }
+
+
+        #B1 {
+            width: 150px;          /* Increase width */
+            height: 40px;          /* Add height */
+            font-size: 18px;       /* Make text larger */
+            background-color: green;
+            color: white;
+            border-radius: 30px;
+            }
+
+        #B2{
+            width: 150px;          /* Increase width */
+            height: 40px;          /* Add height */
+            font-size: 18px;       /* Make text larger */
+            background-color: red;
+            color: white;
+            border-radius: 30px;
+            }
+
+    </style>
+</head>
+<body>
+    <h1 id="Heading">Is JavaScript is Easy?</h1>
+    <button id="B1">Yes</button>
+    <button id="B2">No</button>
+</body>
+<script>
+    document.getElementById("B1").onclick=function(){
+        document.getElementById("Heading").innerHTML="Yes Java script is easy guys"
+    }
+    document.getElementById("B2").onclick=function(){
+        document.getElementById("Heading").innerHTML="No, If you are not practicing it"
+    }
+
+</script>
+</html>

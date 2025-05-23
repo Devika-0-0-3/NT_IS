@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<button onClick="clickButton(1,1,1,1,1)">Action</button>
+<body>
+    <h1>Hello</h1>
+    <script>
+        let name='Devika';
+        document.write("<h1>"+name+"</h1>")
+        function clickButton(a,b,c,d,e){
+            let step1=a+b
+            let step2=c+d+e
+            let output=step1+step2
+            document.writeln(output)
+        }
+        clickButton(2,2,2,2,2)
+        clickButton(4,4,4,4,4)  //declare and call
+        //function we can use it again and again
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit=" return submitForm()">
+        <label>Name</label>
+        <br>
+        <input type="text" id="username">
+        <br>
+        <span style="color:red" id="Msg1"></span><!--Span only covers particular span, heading takes the entire width-->
+        <br>
+        <label>Number</label>
+        <br>
+        <input type="Number" id="usernumber">
+        <br>
+        <span style="color:red" id="Msg2"></span>
+        <br>
+        <input type="Submit">
+    </form>
+</body>
+<script>
+    function submitForm(){
+        let Username= document.getElementById('username').value;
+        let Usernumber=document.getElementById('usernumber').value;
+        if(Username==""){
+            document.getElementById("Msg1").innerHTML="Kindly Enter your name";
+            return false;
+        }else{
+            document.getElementById("Msg1").innerHTML="";
+        }
+         if(Usernumber==""){
+            document.getElementById("Msg2").innerHTML="Kindly Enter your number";
+            return false;
+        }else{
+            document.getElementById("Msg2").innerHTML="";
+        }
+    }
+</script>
+</html>

@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form onsubmit=" return submitForm()">
+    <form onsubmit="return submitForm()"><!--Without return the page will refresh everytime-->
         <label>Name</label>
         <br>
         <input type="text" id="username">
@@ -32,12 +32,21 @@
         }else{
             document.getElementById("Msg1").innerHTML="";
         }
-         if(Usernumber==""){
-            document.getElementById("Msg2").innerHTML="Kindly Enter your number";
+        <!--Not a number-->
+        if(isNaN(Usernumber)){
+            document.getElementById("Msg2").innerHTML="Kindly Enter a valid number";
             return false;
-        }else{
-            document.getElementById("Msg2").innerHTML="";
-        }
+        }else if (Usernumber === "") {
+            document.getElementById("Msg2").innerHTML = "Please enter your number";
+            return false;
+            }else if (Usernumber.length !== 10) {
+            document.getElementById("Msg2").innerHTML = "Number must be 10 digits long";
+            return false;
+            }else {
+            document.getElementById("Msg2").innerHTML = "";
+            }
+        alert("Form is submitted")
+        return true;
     }
 </script>
 </html>
